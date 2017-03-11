@@ -10,7 +10,9 @@
    	<meta name="description" content="This page is the homepage of Hiver">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular&subset=Latin,Cyrillic">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700">
 	<link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 <body>
@@ -30,15 +32,15 @@
 				    <label for="email">Enter Email</label>
 				    <i class="fa fa-envelope-o pull-left icon-custom"></i>
 				</span>    
-			    <input type="email" class="form-control" id="email" required>
-			    <span class="alert alert-error email-error">Please enter valid email</span>
+			    <input type="email" class="form-control Rounded_Rectangle_1" id="email" required>
+			    <span class="alert alert-error email-error">Please enter a valid email</span>
 			  </div>
 			  <div class="form-group custom-formgroup">
 			  	<span class="email-phone">
 				    <label for="mobile">Enter Phone</label>
 				    <i class="fa fa-phone-square pull-left icon-custom"></i>
 				</span>    
-			    <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" class="form-control" id="mobile" required>
+			    <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" class="form-control Rounded_Rectangle_1" id="mobile" required>
 			    <span class="alert alert-error phone-error">Please enter Mobile Number</span>
 			  </div>
   			  <div class="form-group submit-div">	
@@ -63,22 +65,22 @@
 		<div class="col-md-3 col-xs-12 text-center square-div">
 			<img class="icon-img" src="one.jpg" alt="">
 			<h4 class="text-head">Quick Sync</h4>
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+			<p class="text-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
 		</div>
 		<div class="col-md-3 col-xs-12 text-center square-div">
 			<img class="icon-img" src="two.jpg" alt="">
 			<h4 class="text-head">Simple Management</h4>
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+			<p class="text-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
 		</div>
 		<div class="col-md-3 col-xs-12 text-center square-div">
 			<img class="icon-img" src="three.jpg" alt="">
 			<h4 class="text-head">Tasks and Notifications</h4>
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+			<p class="text-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
 		</div>
 		<div class="col-md-3 col-xs-12 text-center square-div">
 			<img class="icon-img" src="four.jpg" alt="">
 			<h4 class="text-head">Automatic Reply Sync</h4>
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+			<p class="text-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
 		</div>
 	</div>
 	<div class="col-md-12 col-xs-12 third-section">
@@ -102,12 +104,12 @@
 		</div>
 	</div>
 	<div class="col-md-12 col-xs-12 footer">
-		<ul class="list-inline">
+		<ul class="list-inline copy-right-ul">
 			<li><img src="footer.jpg" alt=""></li>
-			<li class="copy-li">© Copyright Hiver.All rights Reserved</li>
+			<li class="copy-li">© Copyright Shravan.All rights Reserved</li>
 			<li class="terms-li">Terms and Services</li>
-			<li>Privacy Policy</li>
-			<li class="pull-right">Developed By Shravan</li>
+			<li class="privacy-li">Privacy Policy</li>
+			<li class="pull-right copy-right-shravan">© Developed By Shravan</li>
 		</ul>
 	</div>
 
@@ -138,7 +140,7 @@
                		return false;
             	}
             	if(!$('#mobile').val().match('[0-9]{10}'))  {
-            		$('.phone-error').html("Please enter valid Mobile Number");
+            		$('.phone-error').html("Please enter a valid Mobile Number");
             		$('.phone-error').show();
             		return false;
             	}
